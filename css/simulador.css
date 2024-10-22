@@ -1,0 +1,80 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Righteous', sans-serif;
+}
+
+body {
+    background-color: #1e2326;
+    color: #fff;
+}
+
+/* Sección de inicio */
+.inicio {
+    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)),
+        url('../img/fondo.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    /* Cambiado de center a flex-start */
+    justify-content: center;
+    text-align: center;
+}
+
+.contenido-banner {
+    padding: 20px;
+    max-width: 800px;
+    margin-top: 80px;
+    /* Añadido margen superior */
+    text-align: center;
+}
+
+/* Títulos */
+h1 {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: normal;
+    color: #1e90ff;
+    margin-bottom: 40px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .contenido-banner {
+        margin-top: 60px;
+        /* Ajustado para pantallas más pequeñas */
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contenido-banner {
+        margin-top: 40px;
+        /* Ajustado para pantallas muy pequeñas */
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+}
