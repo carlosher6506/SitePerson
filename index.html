@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/Menu.css">
+    <link rel="stylesheet" href="css/Inicio.css">
+    <link rel="stylesheet" href="css/SobreMi.css">
+    <link rel="stylesheet" href="css/Skills.css">
+    <link rel="stylesheet" href="css/Curriculum.css">
+    <link rel="stylesheet" href="css/Portafolio.css">
+    <link rel="stylesheet" href="css/Contacto.css">
+    <link rel="stylesheet" href="css/Footer.css">
+    <title>Portafolio</title>
+</head>
+
+<body>
+    <!--MENU ENCABEZADO-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Juan Carlos</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#habilidades" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!--SECCION INICIO-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.jpg" alt="">
+            </div>
+            <h1>JUAN CARLOS GÓMEZ HERNÁNDEZ</h1>
+            <h2>Ingeniero en Desarrollo de Software - Desarrollador Full Stack</h2>
+            <div class="redes">
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/carlosher6506"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION SOBRE MI-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <center>
+                <h1>Sobre Mí</h1>
+            </center>
+            <center>
+                <p><span>Hola, soy Juan Carlos Gómez Hernández</span></p>
+            </center>
+            Ingeniero en Desarrollo de software.
+            Me gusta programar sitios webs, aplicaciones desktop y movile.
+            Actualmente estoy en el ultimo año de carrera y me estoy especializando en desarrollo Full Stack.
+            En un futuro estaremos capacitandonos en ciber seguridad y gestor de base de datos.
+            <p></p>
+
+            <div class="fila">
+                <!-- DATOS PERSONALES -->
+                <div class="col">
+                    <p></p>
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Fecha de nacimiento</strong>
+                            23-04-2003
+                        </li>
+                        <li>
+                            <strong>Telefono</strong>
+                            +52 961 774 2891
+                        </li>
+                        <li>
+                            <strong>Correo</strong>
+                            carlitos512015@hotmail.com
+                        </li>
+                        <!--<li>
+                            <strong>Website</strong>
+                            30-05-2024
+                        </li>-->
+                        <li>
+                            <strong>Dirección</strong>
+                            1 AV Sur s/n, Chapultenango, Chiapas, México.
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>PROGRAMADOR JUNIOR</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- INTERESES -->
+                <div class="col">
+                    <p></p>
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-clapperboard"></i>
+                            <span>EDICION</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section class="habilidades" id="habilidades">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!-- Habilidades tecnicas-->
+                <div class="col">
+                    <h3>Habilidades Tecnicas</h3>
+                    <div class="habilidades">
+                        <span>C#</span>
+                        <div class="barra-habilidades">
+                            <div class="progreso">
+                                <span>25%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidades">
+                        <span>Html & Css</span>
+                        <div class="barra-habilidades">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidades">
+                        <span>Python</span>
+                        <div class="barra-habilidades">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidades">
+                        <span>Node JS</span>
+                        <div class="barra-habilidades">
+                            <div class="progreso">
+                                <span>35%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidades">
+                        <span>Dart & Flutter</span>
+                        <div class="barra-habilidades">
+                            <div class="progreso">
+                                <span>25%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidades">
+                        <span>Figma</span>
+                        <div class="barra-habilidades">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Ingeníera en desarrollo de software</h4>
+                        <span class="casa"> Universidad Linda Vista</span>
+                        <span class="fecha"> 2021 - 2025 </span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Experiencia laboral</h3>
+                    <div class="item der">
+                        <h4>Sin experiencia laboral</h4>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--PORTAFOLIO-->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>Portafolio</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/fond.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <span>Fotografia</span>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/fond.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <span>Fotografia</span>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/fond.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <span>Fotografia</span>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/fond.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <span>Fotografia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--CONTACTOS-->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <!--Formulario-->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número Telefonico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!--Mapa-->
+                <div class="col">
+                    <img src="img/fond.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                1 AV Sur s/n, Chapultenango, Chiapas, México.
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: +52 961 774 2891
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Correo: carlitos512015@hotmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-tiktok"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+    <script src="scripts/script.js "></script>
+</body>
+
+</html>
