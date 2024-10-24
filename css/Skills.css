@@ -74,12 +74,12 @@
 }
 
 @keyframes CSHARP {
-    0% {
-        width: 0%;
+    100% {
+        width: 25%;
     }
 
     100% {
-        width: 35%;
+        width: 25%;
     }
 }
 
@@ -151,7 +151,7 @@
 
 @keyframes Figma {
     0% {
-        width: 0%;
+        width: 10%;
     }
 
     100% {
