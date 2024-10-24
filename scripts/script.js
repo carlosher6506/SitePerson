@@ -62,7 +62,7 @@ document.getElementById('leerManualMantenimiento').addEventListener('click', fun
 // Función para descargar el archivo .rar
 document.getElementById('descargarSimulador').addEventListener('click', function () {
     const link = document.createElement('a');
-    link.href = '../Product/Static_Balance.rar'; // Asegúrate de reemplazar esta ruta
+    link.href = '../Product/Static_Balance.zip'; // Asegúrate de reemplazar esta ruta
     link.download = 'simulador.rar'; // Nombre del archivo que se descargará
     link.click();
 });
