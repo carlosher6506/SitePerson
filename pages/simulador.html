@@ -4,18 +4,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Tension-Solver</title>
     <link rel="stylesheet" href="../css/simulador.css">
+    <link rel="stylesheet" href="../css/Curriculum.css">
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="inicio">
-        <div class="contenido-banner">
-            <h1>Tension-Solver</h1>
-            <h2>Simulador Educativo - Cuerpos en equilibrio</h2>
+    <section>
+        <div class="inicio">
+            <div class="contenido-banner">
+                <center>
+                    <h1>Tension-Solver</h1>
+                </center>
+                <center>
+                    <h2>Simulador Educativo - Cuerpos en equilibrio</h2>
+                </center>
+                <center><img src="../img/LogoPS.png" alt=""></center>
+                <br>
+                <center>
+                    <h4>Se detalla el desarrollo de un simulador educativo para la primera condición de equilibrio en
+                        Física, dirigido a estudiantes de quinto semestre de bachillerato. La iniciativa surge ante
+                        las dificultades que enfrentan los alumnos para comprender este tipo conceptos, especialmente
+                        debido a la falta de asesorías y problemas de conectividad a internet. Este simulador, que no
+                        requiere conexión, busca facilitar un aprendizaje práctico y dinámico, permitiendo a los
+                        estudiantes explorar conceptos a su propio ritmo.
+                    </h4>
+                </center>
+                <br>
+                <br>
+                <center>
+                    <h2>Ámbito del Sistema</h2>
+                    <h4>Este simulador tiene como objetivo principal proporcionar una herramienta interactiva que
+                        permita a los estudiantes de bachillerato explorar y comprender el tema de: primera condición de
+                        equilibrio en la materia de Física 1.</h4>
+                </center>
+            </div>
         </div>
+    </section>
+
+    <div style="position: absolute; top: 20px; left: 20px;">
+        <button class="btn-regresar" onclick="window.location.href='../index.html#portfolio'">Regresar</button>
     </div>
+
+    <!-- Documentacion -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Documentación del simulador</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <div class="item izq">
+                        <h4>Especificación de Requisitos del Simulador</h4>
+                        <button id="leerEspecificacion">Leer PDF<span class="fecha"></span></button>
+                        <a href="../Pdf/Especificación de Requisitos del Software (SRS).pdf"
+                            download="Especificación de Requisitos del Software (SRS).pdf">
+                        </a>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <div class="item der">
+                        <h4>Diseño de Arquitectura de Software</h4>
+                        <button id="leerArquitectura">Leer PDF<span class="fecha"></span></button>
+                        <a href="../Pdf/Diseño de Arquitectura de Software.pdf"
+                            download="Diseño de Arquitectura de Software.pdf">
+                        </a>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col izquierda">
+                    <div class="item izq">
+                        <h4>Diseño Detallado del Software</h4>
+                        <button id="leerDisenoDetallado">Leer PDF<span class="fecha"></span></button>
+                        <a href="../Pdf/Diseño Detallado del Software.pdf" download="Diseño Detallado del Software.pdf">
+                        </a>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <div class="item der">
+                        <h4>Manual del Usuario</h4>
+                        <button id="leerManualUsuario">Leer PDF<span class="fecha"></span></button>
+                        <a href="../Pdf/Manual de Usuario.pdf" download="Manual de Usuario.pdf">
+                        </a>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col izquierda">
+                    <div class="item izq">
+                        <h4>Manual de Mantenimiento</h4>
+                        <button id="leerManualMantenimiento">Leer PDF<span class="fecha"></span></button>
+                        <a href="../Pdf/Manual de Mantenimiento.pdf" download="Manual de Mantenimiento.pdf">
+                        </a>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>Obtener Simulador</h2>
+            <div class="fila">
+                <div class="col">
+                    <button id="descargarSimulador">Descargar <i class="fa-solid fa-download"></i><span
+                            class="overlay"></span></button>
+                </div>
+            </div>
+            <div class="redes">
+                <h2>Ver Proyecto en GitHub</h2>
+                <a href="https://github.com/carlosher6506/SimuladorCuerposEquilibrio" class="github-icon"><i
+                        class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../scripts/script.js"></script>
 </body>
 
 </html>

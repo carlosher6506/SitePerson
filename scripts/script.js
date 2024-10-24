@@ -32,6 +32,37 @@ function efectoHabilidades() {
     }
 }
 
-window.onscroll = function () {
-    efectoHabilidades();
+
+// Función para abrir un PDF en una nueva pestaña
+function abrirPDF(url) {
+    window.open(url, '_blank');
 }
+
+// Asigna la funcionalidad a los botones
+document.getElementById('leerEspecificacion').addEventListener('click', function () {
+    abrirPDF('../Pdf/Especificación de Requisitos del Software (SRS).pdf');
+});
+
+document.getElementById('leerArquitectura').addEventListener('click', function () {
+    abrirPDF('../Pdf/Diseño de Arquitectura de Software.pdf');
+});
+
+document.getElementById('leerDisenoDetallado').addEventListener('click', function () {
+    abrirPDF('../Pdf/Diseño Detallado del Software.pdf');
+});
+
+document.getElementById('leerManualUsuario').addEventListener('click', function () {
+    abrirPDF('../Pdf/Manual de Usuario.pdf');
+});
+
+document.getElementById('leerManualMantenimiento').addEventListener('click', function () {
+    abrirPDF('../Pdf/Manual de Mantenimiento.pdf');
+});
+
+// Función para descargar el archivo .rar
+document.getElementById('descargarSimulador').addEventListener('click', function () {
+    const link = document.createElement('a');
+    link.href = '../Product/Static_Balance.rar'; // Asegúrate de reemplazar esta ruta
+    link.download = 'simulador.rar'; // Nombre del archivo que se descargará
+    link.click();
+});

@@ -13,8 +13,8 @@ body {
 
 /* Sección de inicio */
 .inicio {
-    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)),
-        url('../img/fondo.jpg');
+    background: linear-gradient(to top, rgba(30, 35, 38, .8), rgb(0, 0, 0)),
+        url(../img/fond.png);
     background-size: cover;
     background-position: center center;
     height: 100vh;
@@ -38,7 +38,7 @@ h1 {
     font-size: 50px;
     color: #fff;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px #252A2E;
 }
 
 h2 {
@@ -77,4 +77,187 @@ h2 {
     h2 {
         font-size: 16px;
     }
+}
+
+.curriculum button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.curriculum button .casa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1f40fa;
+    z-index: -1;
+    transition: 1s;
+}
+
+.curriculum button:hover .casa {
+    width: 100%;
+}
+
+.curriculum button .fecha {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1f40fa;
+    z-index: -1;
+    transition: 1s;
+}
+
+.curriculum button:hover .fecha {
+    width: 100%;
+}
+
+
+.contacto {
+    background-image: url(img/contact_bg.jpg);
+    background-color: #0f1011;
+    color: #fff;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    /* Centra el texto */
+}
+
+.contacto .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contacto h2 {
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contacto .fila {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contacto .col {
+    width: 100%;
+    max-width: 500px;
+    /* Controla el ancho máximo */
+    padding: 10px;
+    position: relative;
+}
+
+.contacto .col input,
+.contacto .col textarea {
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    /* Centra el texto en los campos */
+}
+
+.contacto button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.contacto button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1f40fa;
+    z-index: -1;
+    transition: 1s;
+}
+
+.contacto button:hover .overlay {
+    width: 100%;
+}
+
+.contacto .col .info {
+    position: relative;
+    background-color: #252A2E;
+    padding: 20px;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.contacto .col .info ul {
+    list-style: none;
+}
+
+.contacto .col .info ul li {
+    margin-bottom: 20px;
+}
+
+.contacto .col .info ul li i {
+    color: #1f40fa;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.btn-regresar {
+    background-color: #4CAF50;
+    /* Verde */
+    color: white;
+    /* Texto blanco */
+    border: none;
+    /* Sin borde */
+    padding: 15px 20px;
+    /* Espaciado */
+    text-align: center;
+    /* Centrar texto */
+    text-decoration: none;
+    /* Sin subrayado */
+    display: inline-block;
+    /* Para que funcione el margen */
+    font-size: 16px;
+    /* Tamaño de texto */
+    margin: 4px 2px;
+    /* Margen */
+    cursor: pointer;
+    /* Cambia el cursor al pasar por encima */
+    border-radius: 4px;
+    /* Esquinas redondeadas */
+}
+
+.github-icon i {
+    font-size: 60px;
+    /* Cambia 40px al tamaño deseado */
+    color: #7e008a;
+    /* Cambia el color si lo deseas */
 }
