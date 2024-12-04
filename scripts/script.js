@@ -59,6 +59,22 @@ document.getElementById('leerManualMantenimiento').addEventListener('click', fun
     abrirPDF('../Pdf/Manual de Mantenimiento.pdf');
 });
 
+document.getElementById('leerDocumentaconPruebas').addEventListener('click', function () {
+    abrirPDF('../Pdf/DocumentaconPruebas.pdf');
+});
+
+document.getElementById('leerPlandeGestióndeConfiguracion').addEventListener('click', function () {
+    abrirPDF('../Pdf/Plan de Gestión de Configuración.pdf');
+});
+
+document.getElementById('leerPlandeGestiondeProyectos').addEventListener('click', function () {
+    abrirPDF('../Pdf/Plan de Gestión de Proyectos.pdf');
+});
+
+document.getElementById('leerGuiadeImplementacion').addEventListener('click', function () {
+    abrirPDF('../Pdf/Guía de Implementación.pdf');
+});
+
 // Función para descargar el archivo .rar
 document.getElementById('descargarSimulador').addEventListener('click', function () {
     const link = document.createElement('a');
